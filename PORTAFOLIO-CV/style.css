@@ -612,6 +612,12 @@ progress::-moz-progress-bar {
   background-color: var(--white-color);
 }
 
+.portfolio-modal > img {
+  max-width: 300px;
+  max-height: auto;
+  object-fit: cover;
+}
+
 .portfolio-modal h3 {
   border-bottom: medium solid var(--first-color);
   margin: 1rem auto;
