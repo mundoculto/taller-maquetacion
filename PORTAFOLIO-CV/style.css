@@ -1,9 +1,14 @@
 /* *************** Custom Properties ********** */
 :root {
-  --first-color: rgb(217, 0, 98);
-  --first-alpha-color: rgba(217, 0, 98, 0.75);
-  --second-color: rgb(20, 25, 45);
-  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --first-color: rgb(80, 158, 227);
+  /* --first-color: rgb(217, 0, 98); */
+  --first-alpha-color: rgba(80, 158, 227, 0.75);
+  /* --first-alpha-color: rgba(217, 0, 98, 0.75); */
+
+  --second-color: rgb(80, 20, 100);
+  /* --second-color: rgb(20, 25, 45); */
+  --second-alpha-color: rgba(80, 20, 100, 0.75);
+  /* --second-alpha-color: rgba(20, 25, 45, 0.75); */
   --third-color: rgb(80, 20, 100);
   --third-alpha-color: rgba(80, 20, 100, 0.75);
   --white-color: rgb(255, 255, 255);
@@ -420,6 +425,7 @@ progress::-moz-progress-bar {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
 .bg-gray-light {
@@ -532,7 +538,7 @@ progress::-moz-progress-bar {
 }
 
 .footer {
-  width: 100%;
+  width: 100vw;
   margin-bottom: var(--header-height);
   padding: 0.5rem;
   text-align: center;
@@ -545,7 +551,7 @@ progress::-moz-progress-bar {
   left: 0;
   bottom: 0;
   z-index: 999;
-  width: 100%;
+  width: 100vw;
   height: var(--header-height);
   background-color: var(--second-color);
 }
@@ -558,7 +564,14 @@ progress::-moz-progress-bar {
   padding-right: 1rem;
 }
 
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo a {
+  padding-left: 0.5rem;
   color: var(--first-color);
   font-weight: bold;
   font-size: 2rem;
